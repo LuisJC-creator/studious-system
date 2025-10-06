@@ -1,0 +1,5 @@
+ageInput = input("How old are you? ")
+birthYear = input("What year were you born? ")
+print("Processing....")
+ageVal = 2025 - int(birthYear)
+print("I think you are " + str(ageVal) + " years old.")
