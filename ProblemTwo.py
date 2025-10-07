@@ -55,6 +55,8 @@ def copyStations(oldList, numStations):
         i = i + 1
     return newList
 
+# brute force (sorry)
+
 answer = numLines
 
 # try using 1 line
