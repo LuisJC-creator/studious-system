@@ -4,9 +4,9 @@ class Computer:
     def __init__(self, ident):
         self.ident = ident
         self.isInf = False
-        self.conList = []   # list of connected computer numbers
+        self.conList = []   # list of connected computers
 
-    def setInfStat(self, status):
+    def setInfStat(self, status):git 
         self.isInf = status
 
     def getInfStat(self):
@@ -49,7 +49,7 @@ start = int(lines[end_edge_index])
 computers[start].setInfStat(True)
 
 # checking the lists and updating infection statuses
-infected = [start]   # list of infected 
+infected = [start]   # keeping track of infected
 idx = 0
 while idx < len(infected):
     current_id = infected[idx]
