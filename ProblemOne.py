@@ -6,7 +6,7 @@ class Computer:
         self.isInf = False
         self.conList = []   # list of connected computers
 
-    def setInfStat(self, status):git 
+    def setInfStat(self, status):
         self.isInf = status
 
     def getInfStat(self):
