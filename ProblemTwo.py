@@ -98,6 +98,55 @@ if answer > 2:
             j = j + 1
         i = i + 1
 
+# try using 4 lines if needed
+if answer > 3:
+    i = 0
+    while i < numLines:
+        j = i + 1
+        while j < numLines:
+            k = j + 1
+            while k < numLines:
+                l = k + 1
+                while l < numLines:
+                    stations = [False] * numStations
+                    trackLine(stations, numStations, busLines[i][0], busLines[i][1])
+                    trackLine(stations, numStations, busLines[j][0], busLines[j][1])
+                    trackLine(stations, numStations, busLines[k][0], busLines[k][1])
+                    trackLine(stations, numStations, busLines[l][0], busLines[l][1])
+                    if checkAll(stations, numStations):
+                        answer = 4
+                    l = l + 1
+                k = k + 1
+            j = j + 1
+        i = i + 1
+
+# try using 5 lines if needed
+if answer > 4:
+    i = 0
+    while i < numLines:
+        j = i + 1
+        while j < numLines:
+            k = j + 1
+            while k < numLines:
+                l = k + 1
+                while l < numLines:
+                    m = l + 1
+                    while m < numLines:
+                        stations = [False] * numStations
+                        trackLine(stations, numStations, busLines[i][0], busLines[i][1])
+                        trackLine(stations, numStations, busLines[j][0], busLines[j][1])
+                        trackLine(stations, numStations, busLines[k][0], busLines[k][1])
+                        trackLine(stations, numStations, busLines[l][0], busLines[l][1])
+                        trackLine(stations, numStations, busLines[m][0], busLines[m][1])
+                        if checkAll(stations, numStations):
+                            answer = 5
+                        m = m + 1
+                    l = l + 1
+                k = k + 1
+            j = j + 1
+        i = i + 1
+
+
 
 print(answer)
 outFile = open("output.txt", "w")
