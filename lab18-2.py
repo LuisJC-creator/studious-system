@@ -3,10 +3,16 @@ class BankAccount:
         self.__balance = balance
     
     def deposit(self, amount):
-        pass
+        self.__balance = self.__balance + amount
+        print(f"Your balance is: {self.__balance}")
+        return
 
     def withdraw(self, amount):
-        pass
+        if (self.__balance - amount) < 0:
+            print("Error: Negative Balance")
+        else:
+            self.__balance = self.__balance - amount
+            print(f"Your balance: {self.__balance}")
 
     def get_balance():
         return self.__balance
