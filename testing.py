@@ -24,4 +24,5 @@ jaguar.printInfo()
 print(f"{jaguar.species} bmi is: {jaguar.calBMI()}")
 cat.printInfo()
 print(f"{cat.species} bmi is: {jaguar.calBMI()}")
+
         
