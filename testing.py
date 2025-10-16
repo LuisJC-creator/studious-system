@@ -14,8 +14,12 @@ class Animal:
 
 class Cat(Animal):
     def __init__(self, height, weight, color, species, predator, furLength):
-        super().__init_subclass__(self, height, weight, color, species, predator)
+        super().__init__(self, height, weight, color, species, predator)
         self.furLength = furLength
+
+class Tabby(Cat):
+    def __init__(self, height, weight, color, species, predator, furLength, stray):
+        super().__init_subclass__
 
 
 jaguar = Animal(2, 6, "Orange", "Jaguar", True)
@@ -23,6 +27,4 @@ cat = Animal(3, 9, "Black", "Cat", True, 15.0)
 jaguar.printInfo()
 print(f"{jaguar.species} bmi is: {jaguar.calBMI()}")
 cat.printInfo()
-print(f"{cat.species} bmi is: {jaguar.calBMI()}")
-
-        
+print(f"{cat.species} bmi is: {jaguar.calBMI()}")     
