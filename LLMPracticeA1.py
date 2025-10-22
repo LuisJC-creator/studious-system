@@ -24,7 +24,7 @@ class BankAccount():
         self.__overdraft_limit = limit
     
     def getBalance(self):
-        return self.__balance
+        return self.getBalance
     
 acct = BankAccount("Mark", 200, 0)
 acct.withdraw(100)
